@@ -1,0 +1,23 @@
+{
+  "kind": "SealedSecret",
+  "apiVersion": "bitnami.com/v1alpha1",
+  "metadata": {
+    "name": "tap-registry",
+    "namespace": "tap-install",
+    "creationTimestamp": null
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "name": "tap-registry",
+        "namespace": "tap-install",
+        "creationTimestamp": null
+      },
+      "type": "kubernetes.io/dockerconfigjson",
+      "data": null
+    },
+    "encryptedData": {
+      ".dockerconfigjson": "AgAtyKE0fY1KsTeEmLD2ObPi4ZcFXQ9zy2LKXwC3edpfaidT+j+lN8kJNd57c11vrWDbxor5rmlKntePdDASYWWwoTh1mY5FwK/rwMt/AkweBCCd5VGo0oqu236GheRlp52TRDdcbhKb9C1wb6XmQyhHvnfM9RSE2DbPGViYAv4+4wfVMJMS0MIlgODkVAUqvQ/5jWIh0u56Vl6MrKDIhgKSVcAxa9vnmJNzUumhpsq7MGKMffpnc3GgjOI8qr13Y/kGprtY3ylCUNW4sH8wQds4Kx6w9h5cgkpNtmGclPSj9FPKktliQk5FXhA/nyOvLlSiWAE+8ceY+hpiDt+zdZRuERSUmpPEwsf9truFHozds4AlEuNHzt5QAjkjvbDiJlGMDf41SZ7uGitxbo62DLfBQfbQ9qkHShYANvFHGX27fKZF1ooQnvq/Ia1NK5p8K4OTVedt5orHW3pCOVeOT3ginWpeC/Tl/gwJNXQJuPbhhAS7B53ozEo76/qkkgEdrspa5GBun0jAvBXTtSLM8+NTJbvBqoOZy+LyX+YZzRAMjOIneJfSD/vZhZewcK/4TgCxZPld7AIM82CPpZRjsEg4eA7vxpnmEw4r18VCpndEwUN8dql8nJ1r6s7XZaX3cXn633ek669BPmbd+mvwBabKnbzZGcGoyUJ5TJkYbh40g2kiHTFwSZ173MM0klJmNal+SqwxgMTQrgRLWMWa4qVmZMPrnlaWj1QhxSuhfRfCwZ6D2nVxbbCkIl8p5oxBChm5zWv/8je7BJvtMuMxROI/meDw70hqXKFIld0gM8coxgVAo2u+W5FAKTe1PklJrEC5p9fdN8gERdIGXGklfB7xc3weEHpXBDXTkwrzCwnerbu2duwF5plRl0zAXVwj93NFkdDzGUS2zVQxTZ+zKQqoR9MiPzYzG8LTTlH/PDj4Cw=="
+    }
+  }
+}
