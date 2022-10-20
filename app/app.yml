@@ -14,7 +14,7 @@ spec:
       ref: origin/main
       subPath: packaging
       secretRef: 
-        name: tap-install-gitops-ssh-external-secret
+        name: tap-install-gitops-ssh
   template:
   - ytt: {}
 
