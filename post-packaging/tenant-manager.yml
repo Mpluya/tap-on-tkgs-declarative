@@ -1,0 +1,21 @@
+apiVersion: kappctrl.k14s.io/v1alpha1
+kind: App
+metadata:
+  name: tenant-manager
+  namespace: tap-install
+spec:
+  serviceAccountName: tap-install-gitops-sa
+  fetch:
+  - git:
+      url: ssh://git@github.com/Mpluya/tap-tenants-on-tkgs-declarative
+      ref: origin/main
+      secretRef: 
+        name: tap-install-gitops-ssh
+  template:
+  - ytt: {}
+
+  deploy:
+  - kapp:
+      rawOptions:
+      - --wait-check-interval=5m
+      - --diff-changes=true
