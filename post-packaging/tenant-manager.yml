@@ -9,6 +9,7 @@ spec:
   - git:
       url: ssh://git@github.com/Mpluya/tap-tenants-on-tkgs-declarative
       ref: origin/main
+      subPath: cluster
       secretRef: 
         name: tap-install-gitops-ssh
   template:
