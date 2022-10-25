@@ -1,0 +1,28 @@
+apiVersion: v1
+data:
+  ca_cert_data: |
+    -----BEGIN CERTIFICATE-----
+    MIIDZTCCAk2gAwIBAgIUVtxx5pciVMHtMx1392qlZ+o9ON4wDQYJKoZIhvcNAQEL
+    BQAwKzEpMCcGA1UEAwwgaGFyYm9yLmgyMC0yLTE0NDQuaDJvLnZtd2FyZS5jb20w
+    HhcNMjIxMDE3MTgwODExWhcNMzIxMDE0MTgwODExWjArMSkwJwYDVQQDDCBoYXJi
+    b3IuaDIwLTItMTQ0NC5oMm8udm13YXJlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQAD
+    ggEPADCCAQoCggEBANSN6XD+yi+30naOjjbo3uogN5CJj9qeQ0wyC2SP61oY+MCj
+    RekFRFqzz9x4udvDyHmLYSLCIBiN8kgnq2MIrWokvI2reSwyJD6mS/usAc+k+9Pn
+    4VV0pbpx6urterLM1k8XVazwIzc97LYIudUcy6D9UGk7X26Nsy6wYrjD/z9N0/XE
+    1XRRiu7kalH/qosMjbyYs3NmjydaaZrljwHsx0b/0D2vLTrrVGlQZvT+RbkNqNkg
+    nDdC+KPkfQYJn8pxNEHnSevuyP3KgF1wLuU08RiacgP3y3+2EgJ0MieJ/4HZ6QOb
+    ewXudf+U1nwJvtor+1cJoOzoEaiVuNqvfxinUzMCAwEAAaOBgDB+MB0GA1UdDgQW
+    BBScANPmNuC5TOC6CacXWczbUuykVjAfBgNVHSMEGDAWgBScANPmNuC5TOC6CacX
+    WczbUuykVjAPBgNVHRMBAf8EBTADAQH/MCsGA1UdEQQkMCKCIGhhcmJvci5oMm8t
+    Mi0xNDQ0Lmgyby52bXdhcmUuY29tMA0GCSqGSIb3DQEBCwUAA4IBAQB5NZwDMK/c
+    7bATgTvwm5KWP/g2EM4HAONFZ2DOUKuKVz6fZUp3nck6KCQTAVGsu9resEkHyvMd
+    BehgwMQnswksgPVpXgNfSYkTkldnMllyU8jAcDKeb8JGtmUy+q6em+Nm8ZPK/pYP
+    8D0N3t10IqLoiqSVcsfqRksQfwpHvMAWJGMNBgn9f+P8Q7Tcu109K/PKL5fwhnc5
+    etpsw2DG2PCt0rpeL5AjmUUBYJESVZ9cWbk05XpbVWzQ+oToIoY14+SC8oaOxwj/
+    05bZ4+zE9eOQQHflX9YxbR3sdiC4mBstOyLzxi9EjYGtvecO3XSwxny5IxG04Y9E
+    KF2yH0xi68vT
+    -----END CERTIFICATE-----
+kind: ConfigMap
+metadata:
+  name: harbor-ca-cert-configmap-for-grype
+  namespace: tap-install
