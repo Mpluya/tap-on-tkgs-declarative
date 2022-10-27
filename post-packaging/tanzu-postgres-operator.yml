@@ -6,10 +6,10 @@ metadata:
 spec:
   fetch:
   - helmChart:
-      name: tanzu-sql-postgres/postgres-operator-chart
-      version: "v1.8.0"
+      name: postgres-operator
+      version: "1.8.0"
       repository:
-        url: oci://harbor.h2o-2-1444.h2o.vmware.com/helm-charts
+        url: oci://harbor.h2o-2-1444.h2o.vmware.com/charts
         secretRef:
           name: tap-registry
   template:
