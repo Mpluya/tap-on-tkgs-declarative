@@ -1,0 +1,22 @@
+apiVersion: kappctrl.k14s.io/v1alpha1
+kind: App
+metadata:
+  name: tanzu-postgres-operator
+  namespace: tap-install
+spec:
+  fetch:
+  - helmChart:
+      name: tanzu-sql-postgres/postgres-operator-chart
+      version: "v1.8.0"
+      repository:
+        url: oci://harbor.h2o-2-1444.h2o.vmware.com/helm-charts
+        secretRef:
+          name: tap-registry
+  template:
+  - helmTemplate:
+      valuesFrom:
+      - secretRef:
+          name: postgres-operator-values
+
+  deploy:
+  - kapp: {}
