@@ -4,6 +4,7 @@ metadata:
   name: tanzu-postgres-operator
   namespace: tap-install
 spec:
+  serviceAccountName: tap-install-gitops-sa
   fetch:
   - helmChart:
       name: postgres-operator
