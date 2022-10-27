@@ -7,7 +7,7 @@ spec:
   fetch:
   - helmChart:
       name: postgres-operator
-      version: "1.8.0"
+      version: "v1.8.0"
       repository:
         url: oci://harbor.h2o-2-1444.h2o.vmware.com/charts
         secretRef:
