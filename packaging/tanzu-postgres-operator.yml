@@ -9,7 +9,7 @@ metadata:
   name: tanzu-postgres-operator
   namespace: postgres-operator
 spec:
-  serviceAccountName: postgres-operator-sa
+  serviceAccountName: postgres-operator-install-sa
   fetch:
   - helmChart:
       name: postgres-operator
