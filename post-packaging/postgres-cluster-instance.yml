@@ -5,6 +5,7 @@ metadata:
   name: resource-claims-postgres
   labels:
     resourceclaims.services.apps.tanzu.vmware.com/controller: "true"
+    servicebinding.io/controller: "true"
 rules:
 - apiGroups: ["sql.tanzu.vmware.com"]
   resources: ["postgres"]
