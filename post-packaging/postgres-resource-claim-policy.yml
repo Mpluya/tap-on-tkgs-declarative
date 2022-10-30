@@ -2,7 +2,7 @@ apiVersion: services.apps.tanzu.vmware.com/v1alpha1
 kind: ResourceClaimPolicy
 metadata:
   name: postgres-cross-namespace
-  namespace: postgres-operator
+  namespace: psql-service-instances
 spec:
   consumingNamespaces:
   - '*'
