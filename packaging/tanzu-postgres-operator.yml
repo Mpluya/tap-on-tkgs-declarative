@@ -15,7 +15,7 @@ spec:
       name: postgres-operator
       version: "v1.8.0"
       repository:
-        url: oci://harbor.h2o-2-1444.h2o.vmware.com/charts
+        url: oci://harbor.h2o-2-1249.h2o.vmware.com/charts
         secretRef:
           name: tap-registry
   template:
