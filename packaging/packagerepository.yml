@@ -9,7 +9,7 @@ metadata:
 spec:
   fetch:
     imgpkgBundle:
-      image: harbor.h2o-2-1249.h2o.vmware.com/tap/tap-packages:1.3.0
+      image: harbor.h2o-2-1249.h2o.vmware.com/tap/tap-packages:1.4.0-build.21
       secretRef: 
         name: tap-registry
         namespace: tap-install
